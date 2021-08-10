@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "893493048110",
+    "project_id": "testunhandledexceptionhandler",
+    "storage_bucket": "testunhandledexceptionhandler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893493048110:android:0b63c27fd38baf84df00bf",
+        "android_client_info": {
+          "package_name": "com.example.testunhandledexceptionhandler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893493048110-qaj0ovor9scggaodn0lil7uhf6kagcp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3kPYUGBWeL1rwvCZZ-lbHRzo_Qif1SAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893493048110-qaj0ovor9scggaodn0lil7uhf6kagcp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

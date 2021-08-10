@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestUnhandledExceptionHandler</string>
+    <string name="crash">Crash Application</string>
+</resources>
