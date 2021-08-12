@@ -7,17 +7,15 @@ import androidx.annotation.NonNull;
 public class CustomExceptionHandler implements Thread.UncaughtExceptionHandler {
 
     private Thread.UncaughtExceptionHandler originalExceptionHandler;
-    private String onExceptionMessage;
 
-    public CustomExceptionHandler(String message) {
+    public CustomExceptionHandler() {
         originalExceptionHandler = Looper.getMainLooper().getThread().getUncaughtExceptionHandler();
         Looper.getMainLooper().getThread().setUncaughtExceptionHandler(this);
-        onExceptionMessage = message;
     }
 
     @Override
     public void uncaughtException(@NonNull Thread t, @NonNull Throwable e) {
-        System.out.println(onExceptionMessage);
+        System.out.println("Handling Exception");
         originalExceptionHandler.uncaughtException(t, e);
     }
 }

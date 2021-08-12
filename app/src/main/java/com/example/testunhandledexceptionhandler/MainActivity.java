@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements Thread.UncaughtEx
      * Determines if the application contains custom crash handling logic. If true, we will set the
      * program's default UncaughtExceptionHandler to the MainActivity.
      */
-    private boolean customExceptionLogic = false;
+    private boolean customExceptionLogic = true;
 
 
     @Override
@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity implements Thread.UncaughtEx
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (customExceptionLogic) {
-            originalExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
-            Thread.setDefaultUncaughtExceptionHandler(this);
-        }
 
+        if (customExceptionLogic) {
+            originalExceptionHandler = Thread.currentThread().getUncaughtExceptionHandler();
+            Thread.currentThread().setUncaughtExceptionHandler(this);
+        }
         appCrasher = new AppCrasher();
 
     }

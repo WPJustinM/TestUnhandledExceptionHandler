@@ -11,7 +11,7 @@ public class AppCrasher {
 
     public AppCrasher() {
         operationHandler = new Handler(Looper.getMainLooper());
-        exceptionHandler = new CustomExceptionHandler("From handler created in AppCrasher.java");
+        exceptionHandler = new CustomExceptionHandler();
     }
 
     public void crash() {
